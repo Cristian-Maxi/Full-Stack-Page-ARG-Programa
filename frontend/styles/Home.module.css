@@ -1,0 +1,111 @@
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    color: aliceblue;
+    margin: 50px auto;
+    text-transform: uppercase;
+    max-width: 500px;
+    background-color: coral;
+    border-radius: 10px;
+    padding: 10px;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 10px 5px black;
+}
+
+.contenedor {
+    background-color: rgba(255, 255, 255, 0.137);
+    max-width: 450px;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding: 30px 30px 30px 30px;
+    box-shadow: 2px 2px 50px 5px black;
+}
+
+.subtitulo {
+    text-align: center;
+    color: aliceblue;
+    font-size: larger;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.contenedor .elemento {
+    position: relative;
+}
+
+.contenedor .elemento label {
+    position: absolute;
+    left: 0px;
+    top: 17px;
+    font-size: 17px;
+    transition: 0.3s linear;
+    color: aliceblue;
+}
+
+.contenedor .elemento input {
+    width: 100%;
+    padding: 20px 0px 5px 0px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    margin-bottom: 30px;
+    color: aliceblue;
+    outline: none;
+    font-size: large;
+}
+
+.contenedor .elemento input[type="submit"] {
+    background-color: rgb(255, 20, 147);
+    border: none;
+    margin-top: 15px;
+    padding: 10px;
+    color: azure;
+    font-size: larger;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.contenedor p {
+    color: aliceblue;
+    text-align: center;
+}
+
+.contenedor p a {
+    color: rgb(246, 102, 215);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contenedor p a:hover {
+    color:coral;
+}
+
+.contenedor .iconos {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenedor .iconos a {
+    color: aliceblue;
+}
+
+.elemento input:focus ~ label, 
+.elemento input:valid ~ label {
+    top: -10px;
+    font-size: 15px;
+    color: rgb(246, 102, 215);
+}
+
+.contenedor .elemento input[type="submit"]:hover {
+    background-color: azure;
+    color: deeppink;
+    text-shadow: 2px 2px 10px rgb(242, 177, 212);
+}

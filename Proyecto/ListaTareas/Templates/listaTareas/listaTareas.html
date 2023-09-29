@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/listaTareas.css' %}">
+    <title>Lista de Tareas</title>
+</head>
+<body>
+    <h1>Bienvenido {{ request.session.usuario_nombre }}!</h1>
+    <h2>Aqui va la aplicacion de manejo de tareas que hicimos en next!</h2>
+    <p>Esto es solo a modo de ejemplo para testear el funcionamiento de Django</p>
+    <h3>Lista de tareas predefinidas a modo de ejemplo</h3>
+    <ul>
+        {% for tarea in tareas %}
+        <li>
+            {{tarea}}
+        </li>
+        {% endfor %}
+    </ul>
+    <button><a href="{% url 'login' %}" style="text-decoration: none;">Cerrar sesion</a></button>
+</body>
+</html>

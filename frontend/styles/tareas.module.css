@@ -1,0 +1,182 @@
+.contenedor {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgb(255, 0, 76);
+    padding: 20px;
+    max-width: 40%;
+    margin: 30px auto 50px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 2px;
+    box-shadow: 2px 2px 10px 5px black;
+}
+
+.agregar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 0, 76);
+    max-width: 60%;
+    padding: 30px 30px 22px 30px;
+    margin: 0px auto 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    box-shadow: 2px 2px 10px 5px black;
+}
+
+.agregar input {
+    flex-grow: 1;
+    margin-right: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.boton_add {
+    background-color: rgb(24, 136, 241);
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 16px;
+    max-width: 100px;
+    min-height: 55px;
+    margin: auto;
+    box-shadow: 2px 2px 1px 2px black;
+}
+
+.boton_add:hover {
+    background-color: rgb(119, 118, 124);
+    cursor: pointer;
+    text-shadow: 2px 2px black;
+}
+
+.boton_add:active {
+    background-color: rgb(116, 31, 18);
+    text-shadow: 2px 2px black;
+}
+
+.contenido  {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid rgb(23, 17, 17);
+    max-width: 40%;
+    text-align: center;
+    margin: auto;
+    padding: 20px 30px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 5px black;
+}
+
+.contenido button {
+    font-size: 16px;
+    background-color: cornflowerblue;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 1px 2px black;
+}
+
+.input_editar {
+    width: 100%;
+    padding: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 2px;
+    border-radius: 10px;
+}
+
+.contenido button:hover {
+    background-color: rgb(119, 118, 124);
+    text-shadow: 2px 2px black;
+}
+
+.contenido button:active {
+    background-color: rgb(130,35,21);
+    text-shadow: 2px 2px black;
+}
+
+.checkbox {
+    transform: scale(1.8) translateY(1px);
+    margin: 0 16px 0 0;
+    cursor: pointer;
+}
+
+.todo_text input {
+    padding: 4px;
+  }
+
+.todo_text {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    font-weight: bold; 
+}
+
+.todo_text input {
+    padding: 4px;
+}
+
+.todo_text.checked {
+    text-decoration: line-through; /* Aplica el tachado al texto cuando la clase 'checked' está presente */
+}
+
+.todo_actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.regresar {
+    display: block;
+    margin: auto;
+    background-color: rgb(52, 113, 227);
+    border: none;
+    margin-top: 30px;
+    padding: 10px;
+    color: azure;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px black;
+    transition: 1s;
+}
+
+.regresar:hover {
+    background-color: rgb(156, 41, 65);
+    text-shadow: 2px 2px black;
+    transform: scale(1.1);
+}
+
+.eliminar {
+    display: block;
+    margin: auto;
+    background-color: rgb(156, 41, 65);
+    border: none;
+    margin-top: 30px;
+    padding: 10px;
+    color: azure;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 10px;
+    text-shadow: 2px 2px 5px black;
+    transition: 1s;
+}
+
+.eliminar:hover {
+    background-color: rgb(255, 225, 1);
+    text-shadow: 2px 2px 5px black;
+    transform: scale(1.1);
+}

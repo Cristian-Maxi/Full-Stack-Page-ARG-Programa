@@ -1,0 +1,79 @@
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    color: rgb(245, 245, 245);
+    margin: 50px auto 70px;
+    text-transform: uppercase;
+    border: 3px solid whitesmoke;
+    max-width: 800px;
+    background-image: linear-gradient(to right top,#90b7ff, #867cf4, #bc70ef);
+    text-shadow: 2px 2px 5px black;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    padding: 10px;
+    max-width: 800px;
+    color: whitesmoke;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background-image: linear-gradient(to right top,#184baa, #4e43d2, #9612eb);
+    box-shadow: 2px 2px 30px 4px black;
+}
+
+.contenedor .imagen img {
+    width: 400px;
+}
+
+.contenedor .elemento {
+   margin: 20px 0px;
+}
+
+
+.contenedor .elemento input {
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid whitesmoke;
+    outline: none;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+.contenedor .elemento input[type="submit"] {
+    background-color: rgb(26, 253, 253);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: rgb(253, 36, 36);
+    font-weight: bolder;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.contenedor .elemento input[type="submit"]:hover {
+    color: rgb(26, 253, 253);
+    background-color: rgb(253, 141, 141);
+    text-shadow: 2px 2px 10px black;
+}
+
+.mensaje {
+    font-size: 25px;
+    font-weight: bolder;
+    background-image: linear-gradient(to right top,#90b7ff, #867cf4, #bc70ef);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    text-shadow: 2px 2px 5px black;
+}

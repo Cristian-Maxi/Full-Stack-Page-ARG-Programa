@@ -1,0 +1,36 @@
+body {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(153, 204, 255);
+}
+
+h2, p {
+    text-align: center;
+    color: aliceblue;
+}
+
+button {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    width: 100px;
+    height: 30px;
+}
+
+ul {
+    width: fit-content;
+    margin: 50px auto;
+    color: aliceblue;
+    font-size: larger;
+}
+
+h3 {
+    text-align: center;
+    color: chocolate;
+    font-size: x-large;
+}
+

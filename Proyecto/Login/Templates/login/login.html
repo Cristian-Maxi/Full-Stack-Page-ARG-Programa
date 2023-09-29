@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <title>Login</title>
+</head>
+<body>
+    <h2>Ingresar</h2>
+    <div class="formulario">
+      <form action="" method="post">
+          {% csrf_token %}
+          <div>
+            <label htmlFor="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario" required />
+          </div>
+          <div>
+            <label htmlFor="contraseña">Contraseña</label>
+            <input type="password" name="contraseña" id="contraseña" required />
+          </div>
+          <div>
+            <input type="submit" class="boton" value="Enviar" />
+          </div>
+          <p>No tienes cuenta? <a href="{% url 'formulario' %}">Registrate aquí</a></p>
+        </form>
+    </div>
+</body>
+</html>
